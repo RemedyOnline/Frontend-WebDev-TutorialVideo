@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+   >
+   <meta
+      name="author"
+      content="Michael Agyemang Prempeh"
+   >
+   <meta
+      name="description"
+      content="This is the tutorial file for the video lessons on the 21hr Frontend WebDev Course..."
+   >
+   <title>Frontend WebDev</title>
+</head>
+
+<body>
+   <button>Click me</button>
+   <div class="container">
+
+   </div>
+   <script>
+      function onClickEvent() {
+         const myButton = document.createElement('p');
+         myButton.innerText = 'Button Clicked!';
+         document.querySelector('.container').appendChild(myButton);
+      }
+      document.querySelector('button').onclick = onClickEvent;
+   </script>
+</body>
+
+</html>
